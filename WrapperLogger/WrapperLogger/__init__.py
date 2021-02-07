@@ -70,8 +70,8 @@ def DefineLogger(name=None, loglevel=_DEFAULT_LEVEL):
     logger = getLogger(name)
     logger.setLevel(loglevel)
     logger.addHandler(streamhandler)
-    loggers[name] = logger
 
+    loggers[name] = logger
     return logger
 
 
@@ -102,6 +102,7 @@ def CreateLogFile(logger, logpath, loglevel=_DEFAULT_LEVEL):
     filehandler.formatter = formatter
     logger.addHandler(filehandler)
 
+    loggers[name] = logger
     return logger
 
 ################################################################################
@@ -131,4 +132,5 @@ def OpenLogFile(logger, logpath, loglevel=_DEFAULT_LEVEL):
     filehandler.formatter = formatter
     logger.addHandler(filehandler)
 
+    loggers[name] = logger
     return logger
