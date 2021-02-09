@@ -20,6 +20,7 @@
 #              logger.critical("critical level message")
 #-------------------------------------------------------------------------------
 # Author: Isaac Factory (sir.isaac.factory@icloud.com)
+# Repository: https://github.com/SirIsaacFactory/pythonlibs
 # Date: 2021/02/07
 # Code version: v1.00
 ################################################################################
