@@ -1,11 +1,11 @@
 ################################################################################
-# This software is released under the MIT License see LICENSE.txt
+# This software is released under the MIT License. See LICENSE.txt
 # Package name : WrapperLogger
-# Overview : Dispay log /Write log to file.
+# Overview : Dispay log/Write log to file.
 # HowToUse : Import
-#              when Wrapper is located to the current folder
-#              import WapperLogger as wlogger
-#            Initialise
+#              when Wrapper is located in the current folder
+#              import WrapperLogger as wlogger
+#            Initialize
 #              logger = wlogger.DefineLogger(__name__, loglevel)
 #            if you need a log file:
 #                clear log file before write
@@ -19,9 +19,9 @@
 #              logger.error("error level message")
 #              logger.critical("critical level message")
 #-------------------------------------------------------------------------------
-# Author: Isaac Factory (sir.isaac.factory@icloud.com)
-# Repository: https://github.com/SirIsaacFactory/pythonlibs
-# Date: 2021/02/07
+# Author: pythonyaki (154766771+pythonyaki@users.noreply.github.com)
+# Repository: https://github.com/pythonyaki/SirIsaacFactory-pythonlibs-fork
+# Date: 2023/12/24
 # Code version: v1.00
 ################################################################################
 import os
@@ -81,7 +81,7 @@ def DefineLogger(name=None, loglevel=_DEFAULT_LEVEL):
 ################################################################################
 def CreateLogFile(logger, logpath, loglevel=_DEFAULT_LEVEL):
 
-    # Check log direcotry existence
+    # Check if log directory exists
     logdir = os.path.dirname(logpath)
     if not os.path.isdir(logdir):
         raise Exception("log directory({0}) doesn't exist.".format(logdir))
@@ -111,7 +111,7 @@ def CreateLogFile(logger, logpath, loglevel=_DEFAULT_LEVEL):
 ################################################################################
 def OpenLogFile(logger, logpath, loglevel=_DEFAULT_LEVEL):
 
-    # Check log direcotry existence
+    # Check if log directory exists
     logdir = os.path.dirname(logpath)
     if not os.path.isdir(logdir):
         raise Exception("log directory({0}) doesn't exist.".format(logdir))
